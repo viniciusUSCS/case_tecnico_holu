@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Holu Solar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <div class="logoimg"><img src="media/logo_holu.png" alt=""></div>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li class="active"><a href="">Calculadora Solar</a></li>
+                        <li><a href="">Sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="add-form-container" class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">Insira as informações necessarias para calcular:</h1>
+          </div>
+          <div id="form-box" class="col-md-12">
+            <br>
+
+              <div class="form-group">
+                <label for="nome">Potência total:</label>
+                <input type="number" class="form-control" id="potencia-Total" placeholder="Digite a potência total em Kilo Watss" required>
+                <small class="form-text text-muted">Esse campo é obrigatório</small>
+              </div>
+              <div class="form-group">
+                <label for="nome">Potência do painel:</label>
+                <input type="number" class="form-control" id="potencia-Painel" placeholder="Digite a potência do painel em Watss" required>
+                <small class="form-text text-muted">Esse campo é obrigatório</small>
+              </div>
+              <div class="form-group">
+                <label for="nome">Comprimento do painel:</label>
+                <input type="number" class="form-control" id="comprimento-Painel" placeholder="Digite o comprimento do painel em metros" required>
+                <small class="form-text text-muted">Esse campo é obrigatório</small>
+              </div>
+              <div class="form-group">
+                <label for="nome">Largura do painel:</label>
+                <input type="number" class="form-control" id="largura-Painel" placeholder="Digite a largura do painel em metros" required>
+                <small class="form-text text-muted">Esse campo é obrigatório</small>
+              </div>
+              <div class="form-group">
+                <label for="nome">Estrutura da instalação será feita em base de qual material?</label>
+                <input type="text" class="form-control" id="estrutura-Base" placeholder="Digite o materal (Ex: Laje, fibrocimento, cerâmica)" required>
+              </div>
+              
+              <button type="submit" class="btn btn-primary" id="btn">Calcular</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="add-form-container" class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">Resultados abaixo:</h1>
+          </div>
+          <div id="form-box" class="col-md-12">
+            <div class="respostas">
+                <div>
+                    <span>Quantidade de Placas: </span>
+                    <span id="qntPlacas"></span>
+                </div>
+                <br>
+                <div>
+                    <span>Quantidade de inversores: </span>
+                    <span id="qntInversores"></span>
+                </div>
+                <br>
+                <div>
+                    <span>Potência do painel utilizado (em Watts): </span>
+                    <span id="potPainel"></span>
+                </div>
+                <br>
+                <div>
+                    <span>Comprimento de estrutura necessária (em metros): </span>
+                    <span id="comEstrutura"></span>
+                </div>
+                <br>
+                <div>
+                    <span>Área útil (em metros quadrados): </span>
+                    <span id="areUtil"></span>
+                </div>
+                <br>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>Vinicius Alexandre © 2023 | Todos os direitos reservados | Case técnico para processo seletivo Holu Energia Solar</p>
+      </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
