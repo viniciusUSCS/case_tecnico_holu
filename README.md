@@ -18,7 +18,7 @@ Este sistema é um script que realiza um cálculo de dimensionamento de um siste
 
 O sistema é acionado por um botão de calcular e utiliza a linguagem de programação NodeJS. A saída do sistema é exibida na tela, permitindo que o usuário visualize as informações de forma clara e precisa. Com esse sistema, é possível dimensionar um sistema de energia solar de forma rápida e eficiente, permitindo que o usuário tenha um melhor controle e planejamento do seu investimento em energia solar.
 
-Para criar a página web, utilizei HTML e CSS. Utilizei também a ferramenta EJS para criar templates dinâmicos que são renderizados pelo servidor.
+Para criar a página web, utilizei HTML, CSS e BootStrap. Utilizei também a ferramenta EJS para criar templates dinâmicos que são renderizados pelo servidor.
 
 Para renderizar o HTML, CSS e JavaScript no servidor, utilizei o Express.js, um framework para Node.js que facilita a criação de aplicativos da web. Com o Express, pude definir rotas para a aplicação.
 
